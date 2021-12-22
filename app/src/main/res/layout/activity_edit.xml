@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/mainLayout"
+    android:background="#ac6730"
+    android:padding="20dp"
+    tools:context=".EditActivity">
+
+    <TextView
+        android:id="@+id/titleEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/acme"
+        android:gravity="center"
+        android:text="Edit Drama"
+        android:textColor="@color/black"
+        android:textSize="18pt" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titleEdit"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="title"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textInputTitle"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="year"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textInputYear"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateGenre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="genre"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEpisode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textInputGenre"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateEpisode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="episode"
+                    android:inputType="number"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputActor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textInputEpisode"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateActor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="pemain"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputSinopsis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textInputActor"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <EditText
+                    android:id="@+id/updateSinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawablePadding="6dp"
+                    android:fontFamily="@font/amaranth_bold"
+                    android:hint="sinopsis"
+                    android:inputType="text"
+                    android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:onClick="btnEditData"
+        android:text="edit"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnEditKembali"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/btnEdit"
+        android:onClick="editQuit"
+        android:text="kembali"
+        android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</LinearLayout>
